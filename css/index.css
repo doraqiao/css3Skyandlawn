@@ -1,0 +1,122 @@
+html,head,meta,title,body,div{
+    padding:0;
+    margin:0;
+}
+
+/*天空*/
+.sky{
+    height: 60vh;
+    width:auto;
+    display:block;
+    background:-webkit-linear-gradient(rgb(196,288,253),rgb(255,255,255));
+    background:   -moz-linear-gradient(rgb(196,288,253),rgb(255,255,255));
+    background:     -o-linear-gradient(rgb(196,288,253),rgb(255,255,255));
+    background:        linear-gradient(rgb(196,288,253),rgb(255,255,255));
+    position:relative;
+}
+
+/*云朵*/
+.sky >div{
+    width: 100px;
+    height: 100px;
+    border:1px solid #ffffff;
+    background:#ffffff;
+    -webkit-border-radius:50%;
+       -moz-border-radius:50%;
+         -o-border-radius:50%;
+            border-radius:50%;
+}
+.sky >div:before{
+    content:"";
+    display:block;
+    width:176px;
+    height: 67px;
+    background:#ffffff;
+    border:1px solid #ffffff;
+    -webkit-border-radius:40%;
+       -moz-border-radius:40%;
+         -o-border-radius:40%;
+            border-radius: 40%;
+    -webkit-transform:translate(-63px,28px);
+       -moz-transform:translate(-63px,28px);
+         -o-transform:translate(-63px,28px);
+            transform:translate(-63px,28px);
+}
+.sky >div:after{
+    content:"";
+    display:block;
+    width:84px;
+    height: 56px;
+    background:#ffffff;
+    border:1px solid #ffffff;
+    -webkit-border-radius:40%;
+        -moz-border-radius:40%;
+         -o-border-radius:40%;
+            border-radius: 40%;
+    -webkit-transform:rotate(70deg) translate(-55px,40px);
+       -moz-transform:rotate(70deg) translate(-55px,40px);
+         -o-transform:rotate(70deg) translate(-55px,40px);
+            transform:rotate(70deg) translate(-55px,40px);
+}
+
+/*从左数，第一朵云的定位和缩放*/
+.sky >.cloud1{
+    position:absolute;
+    top: 10px;
+    left: 510px;
+    -webkit-transform:scale(0.7);
+       -moz-transform:scale(0.7);
+         -o-transform:scale(0.7);
+            transform:scale(0.7);
+}
+/*从左数，第二朵云的定位和缩放*/
+.sky >.cloud2{
+    position:absolute;
+    top: 146px;
+    left: 609px;
+    -webkit-transform:scale(0.7);
+       -moz-transform:scale(0.7);
+         -o-transform:scale(0.7);
+            transform:scale(0.7);
+}
+/*从左数，第三朵云的定位和缩放*/
+.sky >.cloud3{
+    position:absolute;
+    top: 61px;
+    left: 730px;
+    -webkit-transform:scale(0.95);
+       -moz-transform:scale(0.95);
+         -o-transform:scale(0.95);
+            transform:scale(0.95);
+}
+/*从左数，第四朵云的定位和缩放*/
+.sky >.cloud4{
+    position: absolute;
+    top: 127px;
+    left: 873px;
+    -webkit-transform:scale(0.5);
+       -moz-transform:scale(0.5);
+         -o-transform:scale(0.5);
+            transform:scale(0.5);
+}
+/*从左数，第五朵云的定位和缩放*/
+.sky >.cloud5{
+    position:absolute;
+    top: 20px;
+    left: 1086px;
+    -webkit-transform:scale(0.65);
+       -moz-transform:scale(0.65);
+         -o-transform:scale(0.65);
+            transform:scale(0.65);
+}
+
+/*草地*/
+.lawn{
+    height: 40vh;
+    width:auto;
+    display:block;
+    background:-webkit-linear-gradient(rgb(255,255,255),rgb(148,190,89));
+    background:   -moz-linear-gradient(rgb(255,255,255),rgb(148,190,89));
+    background:     -o-linear-gradient(rgb(255,255,255),rgb(148,190,89));
+    background:        linear-gradient(rgb(255,255,255),rgb(148,190,89));
+}
